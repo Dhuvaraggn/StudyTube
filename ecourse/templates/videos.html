@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h1> {{vlist.course}} Videos</h1>
+
+{% for vid in vlist %}
+<div class="container">
+
+       <h3> <a href={{vid.vurl}}>{{vid.vname}}</a></h3>
+</div>  
+{% endfor %}
+
+</script>
+</body>
+</html>

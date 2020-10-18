@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h1>Courses</h1>
+{% for co in courses %}
+<div class="container">
+
+    <h3 id={{co.name}}>
+        <input type="hidden" name="name" value="{{name}}"/>
+        <input type="hidden" name="email" value="{{email}}"/>
+        <a href={{co.url}}>{{co.cname}}</button></h3>
+    <h3 style="padding-left: 10px">{{co.description}}</h3>
+</div>  
+{% endfor %}
+
+<script>
+function clickfunction() {
+    
+}
+</script>
+</body>
+</html>
